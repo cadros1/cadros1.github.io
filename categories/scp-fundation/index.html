@@ -240,7 +240,27 @@
 
 
 
+	<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+	<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+	<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+    // gitalk添加所需要的配置信息
+	<script type="text/javascript">
+    		var gitalk = new Gitalk({
+		        clientID: '15f4290a714b28f8d71b',
+		        clientSecret: 'c5affc06964e522c3ba2a61711cf79d35abac6fa',
+		        id: md5(location.pathname),
+		        repo: 'gitalk-comment',
+		        owner: '',
+		        admin: 'cadros1',
+			distractionFreeMode: '',
+
+		    });
+	    gitalk.render('gitalk-container');
+	</script>
+
+
   
+
 
 
 
